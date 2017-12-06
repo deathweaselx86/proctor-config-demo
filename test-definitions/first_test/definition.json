@@ -1,0 +1,44 @@
+{
+  "version" : "-1",
+  "constants" : { },
+  "specialConstants" : { },
+  "salt" : "This is a test name",
+  "rule" : null,
+  "buckets" : [ {
+    "name" : "inactive",
+    "value" : -1,
+    "description" : "Inactive",
+    "payload" : {
+      "stringValue" : "#000000"
+    }
+  }, {
+    "name" : "black",
+    "value" : 0,
+    "description" : "black",
+    "payload" : {
+      "stringValue" : "#FFFFFF"
+    }
+  }, {
+    "name" : "other_color",
+    "value" : 1,
+    "description" : "other color",
+    "payload" : {
+      "stringValue" : "#333333"
+    }
+  } ],
+  "allocations" : [ {
+    "rule" : null,
+    "ranges" : [ {
+      "bucketValue" : -1,
+      "length" : 0.333
+    }, {
+      "bucketValue" : 0,
+      "length" : 0.333
+    }, {
+      "bucketValue" : 1,
+      "length" : 0.334
+    } ]
+  } ],
+  "testType" : "USER",
+  "description" : "This is description number 12"
+}
