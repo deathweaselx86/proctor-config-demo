@@ -1,0 +1,114 @@
+{
+  "audit" : {
+    "version" : "1512680520661",
+    "updated" : 1512680520660,
+    "updatedDate" : "2017-12-07T15:02-0600",
+    "updatedBy" : "aszdf"
+  },
+  "tests" : {
+    "backend_test" : {
+      "constants" : { },
+      "version" : "-1",
+      "salt" : "backend_test",
+      "rule" : null,
+      "buckets" : [ {
+        "name" : "inactive",
+        "value" : -1,
+        "description" : "Inactive",
+        "payload" : {
+          "map" : {
+            "extraData" : "foo"
+          }
+        }
+      }, {
+        "name" : "test1",
+        "value" : 0,
+        "description" : "test1",
+        "payload" : {
+          "map" : {
+            "extraData" : "test1"
+          }
+        }
+      }, {
+        "name" : "test2",
+        "value" : 1,
+        "description" : "test2",
+        "payload" : {
+          "map" : {
+            "extraData" : "test2"
+          }
+        }
+      }, {
+        "name" : "test3",
+        "value" : 2,
+        "description" : "test3",
+        "payload" : {
+          "map" : {
+            "extraData" : "test3"
+          }
+        }
+      } ],
+      "allocations" : [ {
+        "rule" : null,
+        "ranges" : [ {
+          "bucketValue" : -1,
+          "length" : 0.25
+        }, {
+          "bucketValue" : 0,
+          "length" : 0.25
+        }, {
+          "bucketValue" : 1,
+          "length" : 0.25
+        }, {
+          "bucketValue" : 2,
+          "length" : 0.25
+        } ]
+      } ],
+      "testType" : "USER",
+      "description" : "this is a test for the backend"
+    },
+    "first_test" : {
+      "constants" : { },
+      "version" : "-1",
+      "salt" : "This is a test name",
+      "rule" : null,
+      "buckets" : [ {
+        "name" : "inactive",
+        "value" : -1,
+        "description" : "Inactive",
+        "payload" : {
+          "stringValue" : "#000000"
+        }
+      }, {
+        "name" : "black",
+        "value" : 0,
+        "description" : "black",
+        "payload" : {
+          "stringValue" : "#FFFFFF"
+        }
+      }, {
+        "name" : "other_color",
+        "value" : 1,
+        "description" : "other color",
+        "payload" : {
+          "stringValue" : "#333333"
+        }
+      } ],
+      "allocations" : [ {
+        "rule" : null,
+        "ranges" : [ {
+          "bucketValue" : -1,
+          "length" : 0.333
+        }, {
+          "bucketValue" : 0,
+          "length" : 0.333
+        }, {
+          "bucketValue" : 1,
+          "length" : 0.334
+        } ]
+      } ],
+      "testType" : "USER",
+      "description" : "This is description number 12"
+    }
+  }
+}
