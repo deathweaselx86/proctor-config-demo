@@ -1,0 +1,62 @@
+{
+  "version" : "8a3e26ce2e629f4cbf9fef80d151d6c73db7176f",
+  "constants" : { },
+  "specialConstants" : { },
+  "salt" : "backend_test",
+  "rule" : null,
+  "buckets" : [ {
+    "name" : "inactive",
+    "value" : -1,
+    "description" : "Inactive",
+    "payload" : {
+      "map" : {
+        "extraData" : "foo"
+      }
+    }
+  }, {
+    "name" : "test1",
+    "value" : 0,
+    "description" : "test1",
+    "payload" : {
+      "map" : {
+        "extraData" : "test1"
+      }
+    }
+  }, {
+    "name" : "test2",
+    "value" : 1,
+    "description" : "test2",
+    "payload" : {
+      "map" : {
+        "extraData" : "test2"
+      }
+    }
+  }, {
+    "name" : "test3",
+    "value" : 2,
+    "description" : "test3",
+    "payload" : {
+      "map" : {
+        "extraData" : "test3"
+      }
+    }
+  } ],
+  "allocations" : [ {
+    "rule" : null,
+    "ranges" : [ {
+      "bucketValue" : -1,
+      "length" : 0.25
+    }, {
+      "bucketValue" : 0,
+      "length" : 0.25
+    }, {
+      "bucketValue" : 1,
+      "length" : 0.25
+    }, {
+      "bucketValue" : 2,
+      "length" : 0.25
+    } ]
+  } ],
+  "testType" : "USER",
+  "description" : "this is a test for the backend"
+}
